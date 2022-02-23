@@ -1,0 +1,32 @@
+[
+  {
+    "intro": "Precios de Combustible"
+  },
+  {
+    "fuel_type": "Nafta Super 95E 30-S",
+    "price": "$73,41"
+  },
+  {
+    "fuel_type": "Nafta Premium 97E 30-S ",
+    "price": "$75,34"
+  },
+  {
+    "fuel_type": "Gasoil  50-S",
+    "price": "$52,94"
+  },
+  {
+    "fuel_type": "Gasoil  10-S",
+    "price": "$65,98"
+  },
+  {
+    "fuel_type": "Queroseno",
+    "price": "$48,10"
+  },
+  {
+    "fuel_type": "Super Gas",
+    "price": "$59,16"
+  },
+  {
+    "timestamp": "2022-02-23T05:10:01.163Z"
+  }
+]
