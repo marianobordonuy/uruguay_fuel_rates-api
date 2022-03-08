@@ -1,16 +1,16 @@
 const PORT = process.env.PORT || 8000
 const express = require('express')
-const axios = require('axios')
-const cheerio = require('cheerio')
+//const axios = require('axios')
+//const cheerio = require('cheerio')
 const fs = require('fs');
 const path = require('path');
-const cron = require('node-cron');
+//const cron = require('node-cron');
 
 const app = express();
 
-const rates = [];
+//const rates = [];
 
-const urlQuote = 'https://www.unvenu.org.uy/';
+//const urlQuote = 'https://www.unvenu.org.uy/';
 
 app.get('/', (req, res) => {
     res.json('Welcome to Uruguay Fuels (Combustibles Uruguay) API! A good place to get the current price for fuels in Uruguay. ' +
@@ -36,6 +36,9 @@ app.get('/fuel_rates', (req, res) => {
     });
 });
 
+//API updated manually since UNVENU webpage is OOS.
+
+/*
 async function refreshQuotes() {
     const {data} = await axios.get(urlQuote);
     const $ = cheerio.load(data);
@@ -69,13 +72,16 @@ async function refreshQuotes() {
         }
     });
 }
+*/
 
-//Cron job to refresh the rates at midnight
-cron.schedule('01 0 * * *', () => {
+/*
+Cron job to refresh the rates at midnight
+cron.schedule('40 09 * * *', () => {
     refreshQuotes();
 }, {
     scheduled: true,
     timezone: "America/Montevideo"
 });
+*/
 
 app.listen(PORT, () => console.log(`server running on PORT ${PORT}`));
